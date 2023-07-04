@@ -6,7 +6,9 @@
   --primary-color: #0086D4;
   --secondary-color: #FDBE14;
 }
-
+html{
+	overfolw-x: hidden;
+}
 body {
 	background: var(--primary-color);
 	font-family: Arial;
