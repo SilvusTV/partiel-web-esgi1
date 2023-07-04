@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+  --primary-color: #0086D4;
+  --secondary-color: #FDBE14;
+}
+
+body {
+	background: var(--primary-color);
+	font-family: Arial;
+    min-height: 100vh;
+}
+
+.button{
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
+    background: var(--secondary-color);
+    border-radius: 15px;
+    padding: 15px 13px ;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+}
+
+/*HomePage*/
+.homepage body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.homepage .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+    width: 35vw;
+}
+.homepage img{
+    width: 27vw;
+}
+.homepage p{
+    font-size: 1.3rem;
+}
+.homepage p::after{
+    content: ' bonne chance !';
+    color: var(--secondary-color);
+}
+
+/*Quiz*/
+.questions{
+    font-size: 150%;
+    display: flex;
+    justify-content: center;
+}
+.quiz form{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.quiz .question_bloc{
+    padding: 75px;
+    margin: 40px;
+    background: white;
+    width: 70vw;
+    border-radius: 25px 0 25px 0;
+    display: flex;
+    flex-direction: row;
+}
+.quiz .question_bloc img{
+    align-self: center;
+    height: 35vh;
+    margin-right: 100px;
+}
+.quiz h1, .quiz p{
+    margin: 15px;
+}
+.quiz .radio{
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/*Result*/
+
+.result_body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.result{
+    font-size: 150%;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    width: 90vh;
+    height: 90vh;
+    border-radius: 50%;
+}
+.result img{
+    width: 15vw;
+}
+.result h1{
+    color: var(--primary-color);
+    text-transform: uppercase;
+    transform: translateY(100%);
+}
